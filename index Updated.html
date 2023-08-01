@@ -1,0 +1,402 @@
+<style>
+	:root{
+		--bgcolor:#beb8ac;
+		--black:#3D3F42;
+		--white:#f4f7ff;
+		--gray:#d8dce4;
+		--lightgray:#8e9095;
+	}
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+		font-family: monospace;
+	}
+	body{
+		background: var(--bgcolor);
+	}
+	.clearfix{
+		clear: both;
+	}
+	.resume-box{
+		width: 800px;
+		height: 1000px;
+		margin: 100px auto;
+		background: var(--white);
+		box-shadow: 5px 21px 20px 20px #3d3f4238;
+	}
+	.left-section{
+		background: var(--black);
+		width: 250px;
+		height: 1000px;
+		float: left;
+	}
+	.profile{
+		overflow: hidden;
+		position: relative;
+	}
+	.blue-box{
+		width: 257px;
+		height: 407px;
+		background: var(--blue);
+		margin-left: -100px;
+		transform: rotateZ(48deg);
+		margin-top: -178px;
+		
+	}
+	.profile-img{
+			position: absolute;
+		z-index: 9;
+		width: 120px;
+		height: 120px;
+		transform: translate(-50%, -50%);
+		left: 50%;
+		top: 50%;
+		border-radius: 50%;
+		border: 3px solid var(--gray);
+	}
+	.name{
+		color: var(--gray);
+		text-align: center;
+		margin-top: -34px;
+		font-size: 30px;
+		letter-spacing: 2px;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
+	
+	.n-p{
+		width: 180px;
+		margin: 0 auto;
+		text-align: center;
+		color: var(--gray);
+		text-transform: uppercase;
+	}
+	.info{
+		margin-top: 20px;
+	}
+	.heading{
+		width: 180px;
+		margin: 0 auto;
+		padding: 2px;
+		color: var(--gray);
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+	.p1{
+		color: var(--gray);
+		width: 184px;
+		margin: 0 auto;
+		margin-top: 10px;
+		font-size: 15px;
+		line-height: 14px;
+	}
+	.p1 span{
+		font-size: 12px;
+	}
+	.span1 img{
+		background: white;
+		width: 30px;
+		padding: 6px;
+		border-radius: 16px;
+		float: left;
+		margin-right: 10px;
+	}
+	.right-section{
+		padding: 40px 30px;
+		background: var(--white);
+		width: 68%;
+		float: left;
+		height: 1000px;
+	}
+	.right-heading img{
+		background: #3d3f42;
+		width: 36px;
+		padding: 7px;
+		border-radius: 17px;
+		float: left;
+		display: inline-block;
+		margin-top: -6px;
+	}
+	.p2{
+		margin: 0 auto;
+		padding: 2px;
+		color: var(--black);
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: bolder;
+		margin-left: 50px;
+		line-height: 18px;
+	}
+	.p3{
+		margin-top: 20px;
+		color: var(--lightgray);
+		text-align: justify;
+		word-spacing: -4px;
+	}
+	.p8{
+		margin-top: 5px;
+		color: var(--lightgray);
+		text-align: justify;
+		word-spacing: -4px;
+	}
+	
+	.left{
+		width: 25%;
+		float: left;
+	}
+	.right{
+		width: 75%;
+		float: left;
+	}
+	.lr-box{
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.p4{
+		font-size: 14px;
+		font-weight: 600;
+	}
+	.p5{
+		font-size: 12px;
+		color: var(--lightgray);
+	
+	}
+	.s-box{
+		width: 100%;
+		height:auto;
+		padding: 20px 20px 20px 0px;
+		text-align: justify;
+		word-spacing: -4px;
+	}
+	#progress {
+		background:whitesmoke;
+		border-radius: 13px;
+		height: 8px;
+		width: 75%;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+	
+	#progress2 {
+		background: #333;
+		border-radius: 13px;
+		height: 8px;
+		width: 100%;
+	}
+	
+	#progress2:after {
+		content: '';
+		display: block;
+		background: var(--blue);
+		width: 80%;
+		height: 100%;
+		border-radius: 9px;
+	}
+	
+	#progress3 {
+		background: #333;
+		border-radius: 13px;
+		height: 8px;
+		width: 100%;
+	}
+	
+	#progress3:after {
+		content: '';
+		display: block;
+		background: var(--blue);
+		width: 90%;
+		height: 100%;
+		border-radius: 9px;
+	}
+	.p6{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.h-img{
+		margin-top: 25px;
+		width: 45px;
+		margin-right: 45px;
+	}
+	.si{
+		right: 10px;
+	}
+	
+	ul.si{
+		list-style-type: none;
+	}
+	
+	.s-box1{
+		display: flex;
+	}
+	
+	.s-box1>.ar{
+		margin-top: 2.9px;
+		padding-left: 3px;
+		
+	}
+	a{
+		text-decoration: none;
+		color: var(--gray);
+	}
+</style>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style-updated.css">
+
+</head>
+<body>
+
+<div class="resume-box">
+
+	<div class="left-section">
+		<div class="profile">
+		<img src="image/profile2.jpg" class="profile-img">
+		<div class="blue-box"></div>
+		</div>
+		<h2 class="name">Arun R</h2>
+		<p class="n-p">ML Engineer</p>
+
+
+		<div class="info">
+			<p class="heading">Info</p>
+			<p class="p1"><span class="span1"><img src="image/location.png"></span>Address<span> <br>39/1 Munniappan Kovil Street Nagal Nagar<span></span></P> 
+			<p class="p1"><span class="span1"><img src="image/call.png"></span>Phone<span> <br>9942458903</span></p>
+			<p class="p1"><span class="span1"><img src="image/mail.png"></span>Email<span> <br><a href="mailto:arunohm25@gmail.com">arunohm25@gmail.com</a></span></p>
+			<p class="p1"><span class="span1"><a href="https://www.linkedin.com/feed/"><img src="image/linkedin.png"></a><a href= "https://www.linkedin.com/feed/"></span>Linkdin<span></span></a> <br>arunohm25</span></p>
+		</div>
+
+		<div class="info">
+			<p class="heading">Programming</p>
+			<ul class="si">
+			<li><p class="p1">* &nbsp; Python</p></li>
+			<li><p class="p1">* &nbsp; R-Programming</p></li>
+			<li><p class="p1">* &nbsp; C-Programming</p></li>
+			<li><p class="p1">* &nbsp;  HTML</p></li>
+			<li><p class="p1">* &nbsp; CSS</p></li>
+			</ul>
+
+		</div>
+		<div class="info">
+			<p class="heading">Techanical Knowledge</p>
+			<p class="p1">* &nbsp; Machine Learning</p>
+			<p class="p1">* &nbsp; Linear Algebra</p>
+			<p class="p1">* &nbsp; DBMS</p>
+			<p class="p1">* &nbsp; Data Structures</p>
+		</div>
+		<div class="info">
+			<p class="heading">Tools</p>
+			<p class="p1">* &nbsp; Tableau</p>
+			<p class="p1">* &nbsp; Power BI</p>
+			<p class="p1">* &nbsp; R Studio</p>
+			<p class="p1">* &nbsp; MS Office</p>
+			<p class="p1">* &nbsp; Visual Studio</p>
+		</div>
+
+	</div>
+
+	<div class="right-section">
+		<div class="right-heading">
+			<img src="image/user.png">
+			<p class="p2">Carrer Objective</p>
+		</div>
+		<p class="p3">To have a Challenging career, where i can a siginificant contribution with
+			my knowledge and skills to the organization and enchane my experience
+			through continuous learning and teamwork.</p>
+		<div class="clearfix"></div>
+		<br><br>
+		<div class="right-heading">
+			<img src="image/pencil.png">
+			<p class="p2">Work Experience</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">2016 - 2022</p>
+		</div>
+
+		<div class="right">
+			<p class="p4">Quality Assurance Engineer</p>
+			<p class="p5">TVS Motor Company <br>Hosur</p>
+			<p>Planning for Regular Scheduled audit for financial year, Validation of new products,
+				Field failure plan and simulation, Frequent review on test standard and revising
+				based on failure modes,Validation of VA/VE parts and alternate source parts.</p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+		<div class="right-heading">
+			<img src="image/edu.png">
+			<p class="p2">Education</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">2022 - 2025</p>
+			<p class="p5">Coimbatore</p>
+		</div>
+
+		<div class="right">
+			<p class="p4">Karpagam College Of Engineering</p>
+			<p class="p5">B.tech Artificial Intelligence and Data Science</p>
+			<p class="p5">CGPA-8.17 (up to 4th semester)  </p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">2013 - 2016</p>
+			<p class="p5">Dindigul</p>
+		</div>
+
+		<div class="right">
+			<p class="p4">Ratnavel Subramanium Polythenic College</p>
+			<p class="p5">Diploma in Mechanical Engineering</p>
+			<p class="p5">Percentage-74 </p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+
+		<br>
+		<div class="right-heading">
+			<img src="image/edu.png">
+			<p class="p2">Projects</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="s-box">
+		<h4>Attendance System using Face Recognition-Machine Learning Concept </h4>
+		<li class="p8">A facial recognition attendance system incorporates facial recognition technology to recognize and verify an employee's facial features and to record attendance automatically</li>
+		<h4>Juvenile Crime-R Shiny Project</h4>
+		<li class="p8">In India, child crime is classified as a juvenile crime. That is, delinquent acts committed by children under a specified age are classified as child crimes.</li>
+		<h4>Magic Squares-Data Structure Concept</h4>
+		<li class="p8">A magic square is an n x n square with a whole number written inside each cell, so that the sum of the numbers in every row, in every column and in each of the main diagonals is equal.</li>
+
+		<div class="clearfix"></div>
+		<br><br>
+		<div class="right-heading">
+			<img src="image/edu.png">
+			<p class="p2">Certifications</p><br>
+		</div>
+		<div class="clearfix">
+		<div class="s-box3 s-box1">
+		<h4 ><B>Programming in C Certification</B></h4>
+		<h6 class="ar">-Cadd Cae Computers Dindigul</h6>
+		</div>
+		<div class="s-box3 s-box1">
+		<h4><B>Fundamentals of deep Learning</B></h4>
+		<h6 class="ar">-NVIDIA Bangalore</h6>
+		</div>
+		<div class="s-box3 s-box1">
+		<h4><B>AWS Educate Getting Started with Storage</B></h4>
+		<h6 class="ar">-Amazon Web Services</h6></div>
+		
+		</div>
+
+</div>
+
+
+
+</body>
+</html>
